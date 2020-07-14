@@ -63,7 +63,7 @@ public void verifyAutoLike(String hashtag) throws InterruptedException
 	al.add(comment9);
 	al.add(comment10);
 	
-	for(int i=0; i<=45; i++)
+	for(int i=0; i<=50; i++)
 	{
 		executor.executeScript("arguments[0].scrollIntoView();", postlinks.get(i));
 		postlinks.get(i).click();

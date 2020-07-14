@@ -31,7 +31,7 @@ public class loginpage extends BaseConfiguration
 	{
 		username.sendKeys(un);
 		password.sendKeys(pwd);
-		login.click();
+		executor.executeScript("arguments[0].click();", login);
 		
 		Thread.sleep(3000);
 		driver.manage().timeouts().implicitlyWait(utility.IMPLICIT_WAIT, TimeUnit.SECONDS);

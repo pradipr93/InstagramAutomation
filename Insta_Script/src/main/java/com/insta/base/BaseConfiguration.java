@@ -63,7 +63,7 @@ public class BaseConfiguration {
 		        driver.manage().timeouts().implicitlyWait(utility.IMPLICIT_WAIT, TimeUnit.SECONDS);
 				
 				driver.get(prop.getProperty("url"));
-				executor.executeScript("document.body.style.zoom = '70%'");
+				executor.executeScript("document.body.style.zoom = '40%'");
 				Thread.sleep(5000);
 				
 			}
