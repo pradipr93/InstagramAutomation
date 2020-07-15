@@ -3,7 +3,7 @@ package com.insta.utility;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-
+import java.util.Base64;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 
@@ -48,5 +48,14 @@ public class utility {
 			}
 			return data;
 		}
+	 
+	 public static String decodepassword(String encodedpassword)
+	 {
+		 byte[] strAsByte = Base64.getDecoder().decode(encodedpassword);
+			String decodedPasswd = new String(strAsByte);   
+			
+			System.out.println(decodedPasswd);
+			return decodedPasswd;
+	 }
 
 }

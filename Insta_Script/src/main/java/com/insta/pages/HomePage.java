@@ -13,12 +13,15 @@ import org.openqa.selenium.support.ui.Select;
 
 import com.insta.base.BaseConfiguration;
 import com.insta.base.GeneralWebActions;
+import com.insta.utility.ReadWriteFile;
+import com.insta.utility.utility;
 
 
 
 public class HomePage extends BaseConfiguration
 {
 	GeneralWebActions GeneralWebActionsObj = new GeneralWebActions();
+	utility utilityObj = new utility();
 //Search textbox element
 @FindBy(xpath = "//input[@placeholder = 'Search']")
 	WebElement searchbox;
